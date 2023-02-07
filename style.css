@@ -86,15 +86,41 @@ span {
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
   background-color: #9cc5a1;
   height: 700px;
   width: 100%;
 }
 
-img {
+.hamburger-menu {
   width: 55px;
   height: auto;
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin-left: 30px;
+  color: rgb(48, 98, 206);
+}
+
+h3 {
+  font-family: "Crimson Text", serif;
+  margin-left: 30px;
+  font-size: 38px;
+  font-weight: 400;
+  color: rgb(48, 66, 113);
+}
+
+.alex-pic {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  align-self: center;
+  margin-top: 20px;
 }
