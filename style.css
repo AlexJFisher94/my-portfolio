@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #dce1de;
+  font-family: "Josefin Sans", sans-serif;
+  height: 550px;
+  width: 100%;
+  padding-top: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+header:before {
+  content: url(./images/planet1.svg);
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  width: 225px;
+  height: auto;
+  top: -60px;
+  left: -50px;
+}
+
+header:after {
+  content: url(./images/planet2.svg);
+  display: block;
+  position: absolute;
+  width: 175px;
+  height: auto;
+  z-index: 1;
+  right: -40px;
+  bottom: 15px;
+  overflow: visible;
+}
+
+h1 {
+  font-weight: 300;
+  color: black;
+  font-size: 28px;
+  margin: 40px 20px 20px 40px;
+  line-height: 35px;
+}
+
+span {
+  font-weight: 400;
+}
+
+.angle {
+  position: absolute;
+  bottom: 50px;
+}
+
+.angle:after {
+  content: "";
+  position: absolute;
+}
+
+.angle1 {
+  background-color: #9cc5a1;
+}
+
+.angle1,
+.angle1:after {
+  height: 80px;
+  width: 100%;
+}
+
+.angle1:after {
+  background-color: #dce1de;
+  clip-path: polygon(100% 100%, 100% 0, 0 0);
+}
+
+.extra-height {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #9cc5a1;
+}
+
+.about {
+  background-color: #9cc5a1;
+  height: 700px;
+  width: 100%;
+}
+
+img {
+  width: 55px;
+  height: auto;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
