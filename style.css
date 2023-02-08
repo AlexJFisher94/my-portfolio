@@ -17,6 +17,72 @@ header {
   overflow: hidden;
 }
 
+.nav-bar {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #59585858;
+    z-index: 2;
+}
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: auto;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .menu-btn_burger {
+    width: 45px;
+    height: 4px;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .menu-btn_burger::before,
+  .menu-btn_burger::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 4px;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .menu-btn_burger::before {
+    transform: translateY(-16px);
+  }
+  
+  .menu-btn_burger::after {
+    transform: translateY(16px);
+  }
+  
+  /* MENU ANIMATION */
+  
+  .menu-btn.open .menu-btn_burger {
+    transform: translateX(-50px);
+    background: transparent;
+  }
+  
+  .menu-btn.open .menu-btn_burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  
+  .menu-btn.open .menu-btn_burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+  
+
 header:before {
   content: url(./images/planet1.svg);
   display: block;
@@ -37,7 +103,6 @@ header:after {
   z-index: 1;
   right: -40px;
   bottom: 15px;
-  overflow: visible;
 }
 
 h1 {
@@ -89,16 +154,8 @@ span {
   display: flex;
   flex-direction: column;
   background-color: #9cc5a1;
-  height: 700px;
+  height: 1000px;
   width: 100%;
-}
-
-.hamburger-menu {
-  width: 55px;
-  height: auto;
-  position: absolute;
-  top: 8px;
-  right: 8px;
 }
 
 h2 {
@@ -109,7 +166,7 @@ h2 {
   color: rgb(48, 98, 206);
 }
 
-h3 {
+h3.who-is-this {
   font-family: "Crimson Text", serif;
   margin-left: 30px;
   font-size: 38px;
@@ -124,3 +181,4 @@ h3 {
   align-self: center;
   margin-top: 20px;
 }
+
