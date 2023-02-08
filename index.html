@@ -30,6 +30,10 @@
   <body>
     <header>
       <nav>
+        <ul class="nav-menu hidden">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
         <div class="nav-bar">
           <div class="menu-btn">
             <div class="menu-btn_burger"></div>
@@ -37,17 +41,28 @@
         </div>
       </nav>
       <h1>
-        Hey there. I'm Alex!<br />A <span>Designer</span> and
+        Hey there! I'm Alex.<br />A <span>Designer</span> and
         <span>Front-End Web Developer.</span>
       </h1>
       <div class="angle angle1"></div>
       <div class="extra-height"></div>
     </header>
     <main>
-      <div class="about">
+      <div id="about" class="about-me">
         <h2>ABOUT</h2>
         <h3 class="who-is-this">Who is Alex?</h3>
-        <img src="images/me.jpg" class="alex-pic" />
+        <img src="images/me.jpg" alt="Picture of Alex" class="alex-pic" />
+        <h4 class="about-short">
+          A passionate and motived Front-End Developer with a desire to learn new
+          skills.
+        </h4>
+        <p class="about-long">
+          I'm a self-taught programmer with two years of experience creating
+          websites and applications. I developed my skillset using resources
+          such as The Odin Project, Udemy courses, and MDN Documentation.
+          Creating visually appealing user interfaces and writing clean,
+          accesible code is what matters most to me.
+        </p>
       </div>
     </main>
     <script src="script.js"></script>
