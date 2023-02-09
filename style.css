@@ -10,7 +10,7 @@ html {
 header {
   background-color: #dce1de;
   font-family: "Josefin Sans", sans-serif;
-  height: 550px;
+  height: 510px;
   width: 100%;
   padding-top: 150px;
   position: relative;
@@ -128,7 +128,7 @@ h1 {
   font-weight: 300;
   color: black;
   font-size: 28px;
-  margin: 40px 20px 20px 40px;
+  margin: 40px 8% 20px 8%;
   line-height: 35px;
 }
 
@@ -173,9 +173,9 @@ span {
   display: flex;
   flex-direction: column;
   background-color: #9cc5a1;
-  height: 1080px;
+  height: auto;
   width: 100%;
-  padding: 0 8%;
+  padding: 0 8% 50px 8%;
 }
 
 h2 {
@@ -238,4 +238,46 @@ h3 {
 h2.skills {
   color: #1f2421;
   padding-top: 90px;
+}
+
+.skills-description {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+.icons {
+  font-size: 72px;
+  color: #dce1de;
+}
+
+.icon-names {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: rgba(21, 21, 21, 0.634);
+}
+
+.devicon-javascript-plain {
+  font-size: 66px;
+}
+
+.terminal-icon {
+  width: 100px;
+  height: auto;
 }
