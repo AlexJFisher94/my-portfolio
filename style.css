@@ -10,7 +10,7 @@ html {
 header {
   background-color: #dce1de;
   font-family: "Josefin Sans", sans-serif;
-  height: 510px;
+  height: 515px;
   width: 100%;
   padding-top: 150px;
   position: relative;
@@ -26,6 +26,39 @@ header {
   width: 100%;
   background-color: #59585800;
   z-index: 2;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  padding-left: 0;
+  list-style: none;
+  text-decoration: none;
+  background-color: #9cc5a1;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: 0.4s;
+}
+
+ul {
+  font-size: 32px;
+  padding-top: 100px;
+  text-align: center;
+  line-height: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(48, 66, 113);
+}
+
+.nav-menu.hidden {
+  top: -100%;
+}
+
+.nav-bar.hidden {
+  background-color: #59585800;
 }
 
 .menu-btn {
@@ -80,26 +113,6 @@ header {
 
 .menu-btn.open .menu-btn_burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
-}
-
-.nav-menu {
-  position: fixed;
-  top: 0;
-  list-style: none;
-  background-color: #dce1de;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  transition: 0.4s;
-}
-
-.nav-menu.hidden {
-  top: -100%;
-}
-
-.nav-bar.hidden {
-  background-color: #59585800;
 }
 
 header:before {
@@ -231,11 +244,11 @@ h3 {
 .my-skills {
   background-color: #49a078;
   width: 100%;
-  height: 1000px;
+  height: auto;
   padding: 0 8%;
 }
 
-h2.skills {
+h2.skills-header {
   color: #1f2421;
   padding-top: 90px;
 }
@@ -257,7 +270,6 @@ h2.skills {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   width: 50%;
   margin-bottom: 40px;
 }
@@ -269,8 +281,9 @@ h2.skills {
 
 .icon-names {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: rgba(21, 21, 21, 0.634);
+  padding-top: 20px;
 }
 
 .devicon-javascript-plain {
@@ -278,6 +291,15 @@ h2.skills {
 }
 
 .terminal-icon {
-  width: 100px;
+  width: 90px;
   height: auto;
+}
+
+.terminal-para {
+    padding-top: 0;
+}
+
+.responsive-icon {
+    width: 75px;
+    height: auto;
 }
