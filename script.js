@@ -1,7 +1,9 @@
 const navMenu = document.querySelector(".nav-menu");
 const navBar = document.querySelector(".nav-bar");
 const menuBtn = document.querySelector(".menu-btn");
+const pageLinks = document.querySelector("ul");
 let menuOpen = false;
+
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
     menuBtn.classList.add("open");
@@ -16,4 +18,8 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-
+pageLinks.addEventListener('click', () => {
+    navMenu.classList.add("hidden");
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+})
