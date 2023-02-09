@@ -121,7 +121,7 @@ header:after {
   height: auto;
   z-index: 1;
   right: -40px;
-  bottom: 32px;
+  bottom: 2px;
 }
 
 h1 {
@@ -208,33 +208,34 @@ h3 {
 }
 
 .para {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin-top: 1rem;
 }
 
 .angle2 {
-    background-color: #49A078;
+  background-color: #49a078;
 }
 
-.angle2, .angle2:after {
-    height: 35px;
-    width: 100%;
+.angle2,
+.angle2:after {
+  height: 35px;
+  width: 100%;
 }
 
 .angle2:after {
-    background-color: #9cc5a1;
-    clip-path: polygon(0 0, 100% 0, 25% 100%);
+  background-color: #9cc5a1;
+  clip-path: polygon(0 0, 100% 0, 25% 100%);
 }
 
 .my-skills {
-    background-color: #49A078;
-    width: 100%;
-    height: 1000px;
-    padding: 0 8%;
+  background-color: #49a078;
+  width: 100%;
+  height: 1000px;
+  padding: 0 8%;
 }
 
 h2.skills {
-    color: #1f2421;
-    padding-top: 90px;
+  color: #1f2421;
+  padding-top: 90px;
 }
