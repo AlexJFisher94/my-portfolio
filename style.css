@@ -49,8 +49,12 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: rgb(48, 66, 113);
+  text-decoration: none;
+  color: rgb(48, 66, 113);
+}
+
+a:hover {
+  font-size: 34px;
 }
 
 .nav-menu.hidden {
@@ -200,7 +204,7 @@ h2 {
 
 h3 {
   font-family: "Crimson Text", serif;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 400;
   color: rgb(48, 66, 113);
   margin: 10px 0 15px 0;
@@ -296,10 +300,59 @@ h2.skills-header {
 }
 
 .terminal-para {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .responsive-icon {
-    width: 75px;
-    height: auto;
+  width: 75px;
+  height: auto;
 }
+
+.angle3 {
+  background-color: #216869;
+}
+
+.angle3,
+.angle3:after {
+  height: 40px;
+  width: 100%;
+}
+
+.angle3:after {
+  background-color: #49a078;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.work-section {
+  background-color: #216869;
+  height: 1000px;
+  width: 100%;
+  padding: 0 8%;
+}
+
+.work-header {
+  color: #dce1de;
+  margin-bottom: 20px;
+}
+
+.work {
+  color: #bfc0a3;
+  padding-top: 90px;
+}
+
+.sign-up-site {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+h4 {
+  font-family: "Crimson Text", serif;
+  font-size: 28px;
+  font-weight: 100;
+  color: #b7cec0;
+  margin-top: 15px;
+}
+
+
+#bfc0a3
