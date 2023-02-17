@@ -206,7 +206,7 @@ h3 {
   font-family: "Crimson Text", serif;
   font-size: 38px;
   font-weight: 400;
-  color: rgb(48, 66, 113);
+  color: #304271;
   margin: 10px 0 15px 0;
 }
 
@@ -288,6 +288,7 @@ h2.skills-header {
   font-size: 16px;
   color: rgba(21, 21, 21, 0.634);
   padding-top: 20px;
+  text-align: center;
 }
 
 .devicon-javascript-plain {
@@ -356,12 +357,15 @@ h4 {
 
 .view-site {
   font-size: 22px;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   width: 35%;
   height: 60px;
   margin: 25px 10px 0 0;
   background-color: #bfc0a3;
   border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .view-site a {
@@ -375,12 +379,15 @@ h4 {
 
 .view-code {
   font-size: 22px;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   width: 60%;
   height: 60px;
   margin-top: 25px;
   background-color: #bfc0a3;
   border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .view-code a {
@@ -392,4 +399,115 @@ h4 {
   transform: scale(1.03);
 }
 
+.angle4 {
+  background-color: #216869;
+}
+
+.angle4,
+.angle4:after {
+  height: 35px;
+  width: 100%;
+}
+
+.angle4:after {
+  background-color: #bfc0a3;
+  clip-path: polygon(0 100%, 75% 0, 100% 100%);
+}
+
+.contact {
+  width: 100%;
+  height: auto;
+  background-color: #bfc0a3;
+  padding: 0 8%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  color: black;
+  padding-top: 90px;
+}
+
+.contact-para {
+  margin: 0 0 25px 0;
+}
+
+form input {
+  height: 50px;
+  font-size: 18px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0.831) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0) 0px -3px 0px inset;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+form textarea {
+  height: 150px;
+  font-size: 18px;
+  padding: 10px 0 0 10px;
+  margin-bottom: 25px;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0.831) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0) 0px -3px 0px inset;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+form button {
+  width: 50%;
+  height: 60px;
+  font-size: 18px;
+  margin: 20px 0 20px 0;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0.831) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0) 0px -3px 0px inset;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  background-color: #216869;
+  color: #bfc0a3;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+form button:hover {
+  transform: scale(1.02);
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #bfc0a3;
+  padding: 20px 8%;
+  width: 100%;
+  height: auto;
+}
+
+.social-icons {
+  width: 60px;
+  height: auto;
+}
+
+.social-icons:hover {
+  transform: scale(1.03);
+}
+
+/*
 #bfc0a3
+
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+*/

@@ -18,8 +18,9 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-pageLinks.addEventListener('click', () => {
-    navMenu.classList.add("hidden");
-    menuBtn.classList.remove("open");
-    menuOpen = false;
-})
+pageLinks.addEventListener("click", () => {
+  navMenu.classList.add("hidden");
+  menuBtn.classList.remove("open");
+  menuOpen = false;
+});
+
