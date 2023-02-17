@@ -24,3 +24,11 @@ pageLinks.addEventListener("click", () => {
   menuOpen = false;
 });
 
+const loader = document.querySelector(".loader-container");
+
+loader.addEventListener("load", () => {
+  loader.classList.add("loader-hidden");
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  })
+});
