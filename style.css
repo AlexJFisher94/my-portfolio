@@ -374,9 +374,9 @@ h2.skills-header {
 
 .work-section {
   background-color: #216869;
-  height: 1000px;
+  height: auto;
   width: 100%;
-  padding: 0 8%;
+  padding: 0 8% 80px 8%;
 }
 
 .work-header {
