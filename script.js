@@ -2,7 +2,15 @@ const navMenu = document.querySelector(".nav-menu");
 const navBar = document.querySelector(".nav-bar");
 const menuBtn = document.querySelector(".menu-btn");
 const pageLinks = document.querySelector("ul");
+const loader = document.querySelector(".loader-container");
 let menuOpen = false;
+
+window.addEventListener("load", () => {
+  loader.classList.add("loader-hidden");
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  })
+});
 
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
@@ -24,11 +32,3 @@ pageLinks.addEventListener("click", () => {
   menuOpen = false;
 });
 
-const loader = document.querySelector(".loader-container");
-
-window.addEventListener("load", () => {
-  loader.classList.add("loader-hidden");
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild(loader);
-  })
-});
