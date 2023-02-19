@@ -7,10 +7,7 @@ let menuOpen = false;
 
 window.addEventListener("load", () => {
   loader.classList.add("loader-hidden");
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild(loader);
-  })
-});
+  });
 
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
