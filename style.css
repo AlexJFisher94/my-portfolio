@@ -135,7 +135,7 @@ ul {
 }
 
 li {
-  margin-bottom: 40px;
+  margin: 20px 0 20px 0;
 }
 
 li a {
@@ -148,7 +148,7 @@ li a:hover {
 }
 
 .nav-menu.hidden {
-  top: -100%;
+  top: -150%;
 }
 
 .nav-bar.hidden {
@@ -587,4 +587,26 @@ footer {
   color: #eceaea;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
+}
+
+@media all and (orientation: landscape) {
+  .nav-menu {
+    width: 50%;
+    right: 0;
+  }
+
+  ul {
+    font-size: 22px;
+    text-align: center;
+    line-height: 7vh;
+  }
+  
+  .nav-menu.hidden {
+    top: 0;
+    right: -150%;
+  }
+
+  li a:hover {
+    font-size: 23px;
+  }
 }
